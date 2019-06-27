@@ -133,7 +133,7 @@ List<Map<String, String>> countriesData = [
     "code": "WS"
   },
   {
-    "name": "Bonaire, Saint Eustatius and Saba ",
+    "name": "Bonaire, Saint Eustatius and Saba",
     "currency": "USD",
     "capital": "",
     "dial_code": "599",
