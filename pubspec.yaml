@@ -11,8 +11,15 @@ dependencies:
   flutter:
     sdk: flutter
 
+  flutter_svg:
+    git:
+      url: https://github.com/boanergepro/flutter_svg.git
+      ref: 0.12.4
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 flutter:
+  assets:
+    - lib/assets/flags/
