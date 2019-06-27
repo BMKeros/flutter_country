@@ -2,10 +2,17 @@ import '../resources/countries_data.dart';
 import 'models/country.dart';
 
 class CountryManager {
+  
   List<Country> getContries() {
     return countriesData
         .map((Map<String, String> data) => Country.fromMap(data))
         .toList();
+  }
+
+  Country getCountry({String code}) {
+    return countriesData
+        .map((Map<String, String> data) => Country.fromMap(data))
+        .toList().firstWhere((Country c) => c.code == code.toUpperCase());
   }
 
   List<Map<String, String>> getNames() {
