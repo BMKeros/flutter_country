@@ -28,7 +28,7 @@ class CountryFlagIcon extends StatelessWidget {
     this.placeholderBuilder,
     this.semanticsLabel,
     this.excludeFromSemantics: false,
-  }) : super(key: key);
+  }) : assert(code != null), super(key: key);
 
   static String uri = 'lib/assets/flags';
 
